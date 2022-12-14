@@ -21,7 +21,7 @@ function updatePage(station) {
       updatedText = songText(station);
     }
   }
-  $(".now-playing").text(updatedText)
+  $(".nowplaying").text(updatedText)
 };
 
 function updatePageText () {
