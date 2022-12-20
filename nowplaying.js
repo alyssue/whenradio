@@ -1,5 +1,5 @@
-function songText(station) {
-  return `${station.now_playing.song.title}`;
+function songToString(station) {
+  return string.concat(`${station.now_playing.song.title}`, "-", `${station.now_playing.song.artist}`);
 }
 
 function liveText(station) {
@@ -18,7 +18,7 @@ function updatePage(station) {
   }
   else {
     if (station.now_playing.song.title !== "") {
-      updatedText = songText(station);
+      updatedText = songToString(station);
     }
   }
   $(".nowplaying").text(updatedText)
