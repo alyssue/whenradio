@@ -1,5 +1,5 @@
 function songToString(station) {
-  return string.concat(`${station.now_playing.song.title}`, "-", `${station.now_playing.song.artist}`);
+  return string.concat(${station.now_playing.song.title}, " - ", ${station.now_playing.song.artist});
 }
 
 function liveText(station) {
