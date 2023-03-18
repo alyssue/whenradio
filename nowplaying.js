@@ -1,5 +1,7 @@
 function songText(station) {
-  return `${station.now_playing.song.title}`;
+  const title = station.now_playing.song.title;
+  const artist = station.now_playing.song.artist;
+  return `${title} - ${artist}`;
 }
 
 function liveText(station) {
